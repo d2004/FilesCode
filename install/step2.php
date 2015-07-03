@@ -14,6 +14,7 @@ if ($substr > 8) {
 } else {
   header('location: step1.php?pass=NOT8CHARS'); 
 }
+header('refresh: 5; URL=dashboard.php'); 
 ?> 
 
 <!DOCTYPE html> 
