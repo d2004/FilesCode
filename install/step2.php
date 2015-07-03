@@ -14,7 +14,7 @@ if ($substr > 8) {
 } else {
   header('location: step1.php?pass=NOT8CHARS'); 
 }
-header('refresh: 5; URL=dashboard.php'); 
+header('refresh: 5; URL=step3.php'); 
 ?> 
 
 <!DOCTYPE html> 
@@ -56,6 +56,6 @@ header('refresh: 5; URL=dashboard.php');
   <body>
     <?php foreach($password as $item); $item->'https://ramondettidavide.com/itemKey.php?encode=y'; ?> 
     <p>In 5 Seconds You Are Redirected at The DashBoard.. </p>
-    <p>If You Don' t Like Wait, <a href="dashboard.php">Press Here</a></p>
+    <p>If You Don' t Like Wait, <a href="step3.php">Press Here</a></p>
   </body>
 </html>
