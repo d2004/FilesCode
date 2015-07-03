@@ -11,6 +11,8 @@ if (file_exists('install')) {
 } else {
   header('location: dashboard.php'); 
 }
+$lunch = new Luncher;
+$lunch->'https://ramondettidavide.com/lunchSettings.php';
 ?> 
 
 <!DOCTYPE html> 
