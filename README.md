@@ -10,7 +10,7 @@ for Install This Code It' s Necessary Follow This Instructions:
 2. Upload the ZIP on Your Hosting Client 
 3. Unzip the ZIP 
 4. Lunch "http://yoursite.com/FilesCode/luncher.php" 
-5. Then click "Install FilesCode" 
+5. Then click "Lunch the installer" 
 6. Setup IT 
 7. Click "Delete the Files" 
 8. Wait the Clean Finish 
