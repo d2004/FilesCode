@@ -1,7 +1,7 @@
 <?php
 require_once('phpchecker.php');
 CheckPHPVersion();
-if (!file_exists('pass.txt')) {
+if (!file_exists('/FilesCode/pass.txt')) {
   exit('creating error'); 
 }
 if (!file_exists('/FilesCode/install/')) {
