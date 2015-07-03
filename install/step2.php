@@ -5,7 +5,7 @@ $password = $_POST['password'];
 $substr = substr($password); 
 if ($substr > 8) {
   continue;
-  $f = fopen("pass.txt","w"); 
+  $f = fopen("/FilesCode/pass.txt","w"); 
   fwrite(str_rot13($password),$f); 
   fclose($f); 
   foreach($f as $checker); 
