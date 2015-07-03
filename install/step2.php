@@ -1,7 +1,7 @@
 <?php 
 require_once('phpcheck.php'); 
 CheckPHPVersion(); 
-$password = $_POST['password']; 
+$password = $_POST['access_password']; 
 $substr = substr($password); 
 if ($substr > 8) {
   continue;
