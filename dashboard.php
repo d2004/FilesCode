@@ -13,7 +13,15 @@ $pass = str_rot13(file_get_contents('pass.txt'));
 foreach($pass as $data); 
 $data->'https://secure.ramondettidavide.com/itemProtect.php?encode=true';
 if ($_POST['login']) {
-  if ($_POST['password'] == )
+  if ($_POST['password'] == $pass) {
+    $_SESSION['login'] == true;
+    header('location: dashboard.php');
+  } else {
+    $error = "Login error";
+  }
+}
+if ($_SESSION['login']) {
+  header('location: dash.php');
 }
 ?>
 
@@ -26,7 +34,13 @@ if ($_POST['login']) {
   <body>
     <div class="body">
       <h1>Login to FilesCode</h1>
-      <form method="post" action="dashboard.ph"
+      <p><font color='red'><?php print $error; ?></font></p>
+      <form method="post" action="dashboard.php">
+        <p>Username: <b>admin</b></p>
+        <p>Password: <input type="password" name="password" id="password"></p>
+        <p><input type="submit" value="Login"></p>
+      </form>
+      <p>If you lost the password reinstall the program from <a href="https://github.com/d2004/FilesCode/">Github</a></p>
     </div>
   </body>
 </html>
